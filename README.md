@@ -29,7 +29,7 @@ Adopting this method enhances safety, efficiency, and consistency in Docker work
 
 ## Installation
 
-Clone the repository or copy the script `select-docker-context.sh` into your project's scripts directory:
+Clone the repository or copy the script files into your project's scripts directory:
 
 ```bash
 git clone https://github.com/your-username/docker-compose-env-manager.git
@@ -51,7 +51,7 @@ config_name=context|environment_path
 
 ```bash
 staging=ssh://root@staging.example.com|./environments/staging
-production=my-production-context|./environments/production
+production=the-production-context-name|./environments/production
 ```
 
 Each entry specifies a name, a Docker context or host connection string, and a path to an environment-specific directory. This directory can contain a `.env` file to override more general environment variables and may also include Docker Compose YAML files, such as `docker-compose.yml` and `docker-compose.override.yml`.
